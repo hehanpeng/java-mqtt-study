@@ -16,6 +16,7 @@
     <modules>
         <module>mqtt-spring-boot-autoconfigure</module>
         <module>mqtt-spring-boot-starter</module>
+        <module>mqtt-spring-boot-sample</module>
     </modules>
 
     <dependencyManagement>
