@@ -105,7 +105,7 @@ public class MqttAutoConfiguration {
     public MessageHandler handler() {
         return new MessageHandler() {
             public void handleMessage(Message<?> message) throws MessagingException {
-                String topic = message.getHeaders().get("mqtt_receivedTopic").toString();
+                String topic = message   .getHeaders().get("mqtt_receivedTopic").toString();
                 //todo 这里根据topic取对应的handler
                 String msg = message.getPayload().toString();
                 System.out.println("\n--------------------START-------------------\n" +
